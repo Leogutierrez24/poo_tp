@@ -1,0 +1,11 @@
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\bin\Debug\LIBRERIA.exe.config
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\bin\Debug\LIBRERIA.exe
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\bin\Debug\LIBRERIA.pdb
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.csproj.AssemblyReference.cache
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.Index.resources
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.Properties.Resources.resources
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.Venta_frm.resources
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.csproj.GenerateResource.cache
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.csproj.CoreCompileInputs.cache
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.exe
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_01\LIBRERIA\obj\Debug\LIBRERIA.pdb

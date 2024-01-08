@@ -1,0 +1,10 @@
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\bin\Debug\ESTACION.exe.config
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\bin\Debug\ESTACION.exe
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\bin\Debug\ESTACION.pdb
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.csproj.AssemblyReference.cache
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.Index.resources
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.Properties.Resources.resources
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.csproj.GenerateResource.cache
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.csproj.CoreCompileInputs.cache
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.exe
+I:\Facultad\segundo año\poo\trabajo-practico\ejercicio_02\ESTACION\obj\Debug\ESTACION.pdb

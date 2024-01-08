@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ESTACION.Clases;
 
 namespace ESTACION
 {
@@ -33,9 +34,85 @@ namespace ESTACION
 
     public partial class Index : Form
     {
+        public Estacion estacion;
+
+        public Surtidor surtidorElegido;
+
         public Index()
         {
             InitializeComponent();
+            estacion = new Estacion();
+        }
+
+        private void Index_Load(object sender, EventArgs e)
+        {
+            CargarSurtidores();
+            CargarSurtidor();
+            ActualizarRecaudacion();
+        }
+
+        private void CargarSurtidores()
+        {
+            Surtidores_comboBox.DataSource = null;
+            Surtidores_comboBox.DataSource = estacion.Surtidores;
+        }
+
+        private void CargarSurtidor()
+        {
+            if (surtidorElegido != null)
+            {
+                tipoNafta_lbl.Text = surtidorElegido.Nafta.Tipo.ToString();
+                precio_lbl.Text = string.Format("${0:0.00}", surtidorElegido.Nafta.Precio);
+                cantidad_lbl.Text = string.Format("{0:0.00} Lts", surtidorElegido.Cantidad);
+            }
+        }
+
+        private void ActualizarRecaudacion()
+        {
+            recaudacion_lbl.Text = string.Format("${0:0.00}", estacion.Recaudacion);
+        }
+
+        private void Surtidores_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            surtidorElegido = Surtidores_comboBox.SelectedItem as Surtidor;
+            CargarSurtidor();
+            ActualizarLimiteCargar();
+        }
+
+        private void ActualizarLimiteCargar()
+        {
+            Cantidad_numericUpDown.Maximum = Convert.ToDecimal(surtidorElegido.Cantidad); 
+        }
+
+        private void Recargar_btn_Click(object sender, EventArgs e)
+        {
+            if (surtidorElegido != null)
+            {
+                if (surtidorElegido.Cantidad != 1000) surtidorElegido.Recargar();
+                else MessageBox.Show("Surtidor Lleno.");
+                CargarSurtidor();
+            } else
+            {
+                MessageBox.Show("Seleccioná un surtidor para poder recargar.");
+            }
+        }
+
+        private void Cargar_btn_Click(object sender, EventArgs e)
+        {
+            if (Cantidad_numericUpDown.Value > 0)
+            {
+                if (surtidorElegido != null)
+                {
+                    int resultado = estacion.Vender(surtidorElegido, (float)Cantidad_numericUpDown.Value);
+                    if (resultado == 0) MessageBox.Show("¡Venta realizada con éxito!");
+                    else MessageBox.Show("No se ha podido realizar la venta.");
+                    CargarSurtidor();
+                    ActualizarRecaudacion();
+                    Cantidad_numericUpDown.Value = 0;
+                }
+                else MessageBox.Show("Seleccioná un surtidor para continuar.");
+            }
+            else MessageBox.Show("El monto de carga debe ser superior a 0 para continuar.");
         }
     }
 }

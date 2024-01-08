@@ -34,6 +34,7 @@ namespace ESTACION.Clases
 			this.surtidor = surtidor;
 			this.total = total;
 			this.cantidad = cantidad;
+			this.Impactar();
 		}
 
 		private void Impactar()

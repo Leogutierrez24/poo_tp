@@ -45,7 +45,7 @@ namespace ESTACION.Clases
                 new Nafta(TipoNafta.Premium, 21.30f),
             };
 
-            naftas.ForEach(nafta => surtidores.Add(new Surtidor(nafta)));
+            naftas.ForEach(nafta => surtidores.Add(new Surtidor(surtidores.Count + 1, nafta)));
         }
 
         public int Vender(Surtidor surtidor, float cantidad)
@@ -56,6 +56,7 @@ namespace ESTACION.Clases
                 Venta nuevaVenta = new Venta(surtidor, cantidad * surtidor.Nafta.Precio, cantidad);
                 surtidor.Extraer(cantidad);
                 ventas.Add(nuevaVenta);
+                recaudacion += nuevaVenta.Total;
             } else
             {
                 resultado = -1;

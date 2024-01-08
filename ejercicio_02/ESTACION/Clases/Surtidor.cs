@@ -8,6 +8,13 @@ namespace ESTACION.Clases
 {
     public class Surtidor
     {
+		private int id;
+		public int ID
+		{
+			get { return id; }
+			set { id = value; }
+		}
+
 		private Nafta nafta;
 		public Nafta Nafta
 		{
@@ -28,8 +35,9 @@ namespace ESTACION.Clases
 			get { return cantidad; }
 		}
 
-		public Surtidor(Nafta nafta)
+		public Surtidor(int id, Nafta nafta)
 		{
+			this.id = id;
 			this.nafta = nafta;
 		}
 
@@ -42,5 +50,10 @@ namespace ESTACION.Clases
 		{
 			if (this.cantidad >= cantidad) this.cantidad -= cantidad;
         }
-	}
+
+        public override string ToString()
+        {
+			return $"Surtidor {this.id}";
+        }
+    }
 }

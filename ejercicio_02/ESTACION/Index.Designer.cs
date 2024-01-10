@@ -49,6 +49,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.recaudacion_lbl = new System.Windows.Forms.Label();
+            this.SurtidorRecaudacion_lbl = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.VerReporte_btn = new System.Windows.Forms.Button();
             this.Surtidor_groupBox.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Cantidad_numericUpDown)).BeginInit();
@@ -196,7 +199,7 @@
             // Recargar_btn
             // 
             this.Recargar_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Recargar_btn.Location = new System.Drawing.Point(246, 116);
+            this.Recargar_btn.Location = new System.Drawing.Point(246, 140);
             this.Recargar_btn.Name = "Recargar_btn";
             this.Recargar_btn.Size = new System.Drawing.Size(89, 37);
             this.Recargar_btn.TabIndex = 10;
@@ -227,7 +230,7 @@
             this.Reporte_listBox.FormattingEnabled = true;
             this.Reporte_listBox.Location = new System.Drawing.Point(255, 225);
             this.Reporte_listBox.Name = "Reporte_listBox";
-            this.Reporte_listBox.Size = new System.Drawing.Size(236, 121);
+            this.Reporte_listBox.Size = new System.Drawing.Size(320, 121);
             this.Reporte_listBox.TabIndex = 13;
             // 
             // label11
@@ -242,7 +245,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(494, 128);
+            this.label12.Location = new System.Drawing.Point(503, 116);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 13);
             this.label12.TabIndex = 15;
@@ -251,17 +254,49 @@
             // recaudacion_lbl
             // 
             this.recaudacion_lbl.AutoSize = true;
-            this.recaudacion_lbl.Location = new System.Drawing.Point(597, 128);
+            this.recaudacion_lbl.Location = new System.Drawing.Point(606, 116);
             this.recaudacion_lbl.Name = "recaudacion_lbl";
             this.recaudacion_lbl.Size = new System.Drawing.Size(98, 13);
             this.recaudacion_lbl.TabIndex = 16;
             this.recaudacion_lbl.Text = "recaudacion_value";
+            // 
+            // SurtidorRecaudacion_lbl
+            // 
+            this.SurtidorRecaudacion_lbl.AutoSize = true;
+            this.SurtidorRecaudacion_lbl.Location = new System.Drawing.Point(386, 116);
+            this.SurtidorRecaudacion_lbl.Name = "SurtidorRecaudacion_lbl";
+            this.SurtidorRecaudacion_lbl.Size = new System.Drawing.Size(98, 13);
+            this.SurtidorRecaudacion_lbl.TabIndex = 18;
+            this.SurtidorRecaudacion_lbl.Text = "recaudacion_value";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(252, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Recaudación del surtidor:";
+            // 
+            // VerReporte_btn
+            // 
+            this.VerReporte_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VerReporte_btn.Location = new System.Drawing.Point(15, 252);
+            this.VerReporte_btn.Name = "VerReporte_btn";
+            this.VerReporte_btn.Size = new System.Drawing.Size(89, 27);
+            this.VerReporte_btn.TabIndex = 19;
+            this.VerReporte_btn.Text = "Ver reporte";
+            this.VerReporte_btn.UseVisualStyleBackColor = true;
+            this.VerReporte_btn.Click += new System.EventHandler(this.VerReporte_btn_Click);
             // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 362);
+            this.Controls.Add(this.VerReporte_btn);
+            this.Controls.Add(this.SurtidorRecaudacion_lbl);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.recaudacion_lbl);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -309,6 +344,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label recaudacion_lbl;
+        private System.Windows.Forms.Label SurtidorRecaudacion_lbl;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button VerReporte_btn;
     }
 }
 

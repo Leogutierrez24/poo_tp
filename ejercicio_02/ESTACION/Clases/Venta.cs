@@ -41,6 +41,7 @@ namespace ESTACION.Clases
 		{
 			surtidor.Recaudacion += total;
 			surtidor.Nafta.Recaudacion += total;
+			surtidor.Ventas++;
 		}
 	}
 }

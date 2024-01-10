@@ -64,5 +64,76 @@ namespace ESTACION.Clases
 
             return resultado;
         }
+
+        public Surtidor SurtidorMayorRecaudacion()
+        {
+            List<Surtidor> coleccion = new List<Surtidor>();
+            surtidores.ForEach(surtidor => coleccion.Add(surtidor));
+            return coleccion.OrderByDescending(surtidor => surtidor.Recaudacion).First();
+        }
+
+        public Surtidor SurtidorMenorRecaudacion()
+        {
+            List<Surtidor> coleccion = new List<Surtidor>();
+            surtidores.ForEach(surtidor => coleccion.Add(surtidor));
+            return coleccion.OrderBy(surtidor => surtidor.Recaudacion).First();
+        }
+
+        public Surtidor SurtidorMasClientes()
+        {
+            List<Surtidor> coleccion = new List<Surtidor>();
+            surtidores.ForEach(surtidor => coleccion.Add(surtidor));
+            return coleccion.OrderByDescending(surtidor => surtidor.Ventas).First();
+        }
+
+        public List<(TipoNafta, float)> PorcentajesVentas()
+        {
+            (TipoNafta, float) item;
+            List<(TipoNafta, float)> resultado = new List<(TipoNafta, float)>(); 
+            int cantVentas = ventas.Count;
+            List<Venta> coleccion = new List<Venta>();
+
+            surtidores.ForEach(surtidor =>
+            {
+                ventas.ForEach(venta =>
+                {
+                    if (venta.Surtidor.Nafta.Tipo == surtidor.Nafta.Tipo) coleccion.Add(venta);
+                });
+                float porcentaje = coleccion.Count * 100 / cantVentas;
+                item = (surtidor.Nafta.Tipo, porcentaje);
+                resultado.Add(item);
+                coleccion.Clear();
+            });
+
+            return resultado;
+        }
+
+        public List<(TipoNafta, float)> PorcentajesRecaudacion()
+        {
+            (TipoNafta, float) item;
+            List<(TipoNafta, float)> resultado = new List<(TipoNafta, float)>();
+            List<Venta> coleccion = new List<Venta>();
+
+            surtidores.ForEach(surtidor =>
+            {
+                ventas.ForEach(venta =>
+                {
+                    if (venta.Surtidor.Nafta.Tipo == surtidor.Nafta.Tipo) coleccion.Add(venta);
+                });
+                float porcentaje = coleccion.Sum(venta => venta.Total) * 100 / recaudacion;
+                item = (surtidor.Nafta.Tipo, porcentaje);
+                resultado.Add(item);
+                coleccion.Clear();
+            });
+
+            return resultado;
+        }
+
+        public Surtidor SurtidorMasRecargas()
+        {
+            List<Surtidor> coleccion = new List<Surtidor>();
+            surtidores.ForEach(surtidor => coleccion.Add(surtidor));
+            return coleccion.OrderByDescending(surtidor => surtidor.Recargas).First();
+        }
     }
 }

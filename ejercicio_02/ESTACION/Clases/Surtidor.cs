@@ -35,6 +35,20 @@ namespace ESTACION.Clases
 			get { return cantidad; }
 		}
 
+		private int ventas = 0;
+		public int Ventas
+		{
+			get { return ventas; }
+			set { ventas = value; }
+		}
+
+		private int recargas = 0;
+		public int Recargas
+		{
+			get { return recargas; }
+			set { recargas = value; }
+		}
+
 		public Surtidor(int id, Nafta nafta)
 		{
 			this.id = id;
@@ -44,6 +58,7 @@ namespace ESTACION.Clases
 		public void Recargar()
 		{
 			cantidad = 1000;
+			recargas++;
 		}
 
 		public void Extraer(float cantidad)

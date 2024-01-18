@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CAFETERIA.Clases.Cafe">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAEAAAABAAAQCAAQEAAAEAAAAAAAAAQ=</HashCode>
+      <FileName>Clases\Cafe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.Cafeteria">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\Cafeteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.Vaso">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAAAAAAEAAAAAAAAAAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Clases\Vaso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.VasoChico">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\VasoChico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.VasoGrande">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\VasoGrande.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.VasoMediano">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\VasoMediano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.Cafetera">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCiAAAgAgAAAEAAAIBAAAAAAAAAAAAAAAAEAAAApA=</HashCode>
+      <FileName>Clases\Cafetera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CAFETERIA.Clases.TipoCafe">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\TipoCafe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
